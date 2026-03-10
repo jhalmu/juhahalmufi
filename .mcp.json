@@ -1,0 +1,19 @@
+{
+    "mcpServers": {
+        "laravel-boost": {
+            "command": "php",
+            "args": [
+                "artisan",
+                "boost:mcp"
+            ]
+        },
+        "instruckt": {
+            "command": "php",
+            "args": [
+                "/Users/juha/Library/CloudStorage/Dropbox/Projektit/PHP/juhahalmufi/artisan",
+                "mcp:start",
+                "instruckt"
+            ]
+        }
+    }
+}

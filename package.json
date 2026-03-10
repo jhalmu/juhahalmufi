@@ -1,0 +1,28 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite",
+        "lint": "oxlint --fix && prettier --write .",
+        "lint:fix": "oxlint --fix && prettier --write .",
+        "test:lint": "oxlint && prettier --check ."
+    },
+    "devDependencies": {
+        "@tailwindcss/vite": "^4.2.1",
+        "autoprefixer": "^10.4.27",
+        "axios": "^1.13.6",
+        "concurrently": "^9.2.1",
+        "instruckt": "0.4.25",
+        "laravel-vite-plugin": "^2.1.0",
+        "npm-check-updates": "^19.6.3",
+        "playwright": "^1.58.2",
+        "oxlint": "^1.52.0",
+        "prettier": "^3.8.1",
+        "prettier-plugin-blade": "^3.0.0",
+        "prettier-plugin-organize-imports": "^4.3.0",
+        "prettier-plugin-tailwindcss": "^0.7.2",
+        "tailwindcss": "^4.2.1",
+        "vite": "^7.3.1"
+    }
+}
