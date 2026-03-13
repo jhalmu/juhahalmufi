@@ -42,8 +42,8 @@ final class User extends Authenticatable implements MustVerifyEmail
     /**
      * @return array<string, string>
      */
-    #[Override]
-     protected function casts(): array
+
+     public function casts(): array
     {
         return [
             'id' => 'integer',
