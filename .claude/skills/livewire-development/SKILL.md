@@ -1,9 +1,9 @@
 ---
 name: livewire-development
-description: "Develops reactive Livewire 4 components. Activates when creating, updating, or modifying Livewire components; working with wire:model, wire:click, wire:loading, or any wire: directives; adding real-time updates, loading states, or reactivity; debugging component behavior; writing Livewire tests; or when the user mentions Livewire, component, counter, or reactive UI."
+description: 'Develops reactive Livewire 4 components. Activates when creating, updating, or modifying Livewire components; working with wire:model, wire:click, wire:loading, or any wire: directives; adding real-time updates, loading states, or reactivity; debugging component behavior; writing Livewire tests; or when the user mentions Livewire, component, counter, or reactive UI.'
 license: MIT
 metadata:
-  author: laravel
+    author: laravel
 ---
 
 # Livewire Development
@@ -54,18 +54,19 @@ Before creating a component, check `config/livewire.php` for directory overrides
 
 ### Component Format Reference
 
-| Format | Flag | Class Path | View Path |
-|--------|------|------------|-----------|
-| Single-file (SFC) | default | — | `resources/views/livewire/create-post.blade.php` (PHP + Blade in one file) |
-| Multi-file (MFC) | `--mfc` | `app/Livewire/CreatePost.php` | `resources/views/livewire/create-post.blade.php` |
-| Class-based | `--class` | `app/Livewire/CreatePost.php` | `resources/views/livewire/create-post.blade.php` |
-| View-based | ⚡ prefix | — | `resources/views/livewire/create-post.blade.php` (Blade-only with functional state) |
+| Format            | Flag      | Class Path                    | View Path                                                                           |
+| ----------------- | --------- | ----------------------------- | ----------------------------------------------------------------------------------- |
+| Single-file (SFC) | default   | —                             | `resources/views/livewire/create-post.blade.php` (PHP + Blade in one file)          |
+| Multi-file (MFC)  | `--mfc`   | `app/Livewire/CreatePost.php` | `resources/views/livewire/create-post.blade.php`                                    |
+| Class-based       | `--class` | `app/Livewire/CreatePost.php` | `resources/views/livewire/create-post.blade.php`                                    |
+| View-based        | ⚡ prefix | —                             | `resources/views/livewire/create-post.blade.php` (Blade-only with functional state) |
 
 Namespaced components map to subdirectories: `make:livewire Posts/CreatePost` creates files at `app/Livewire/Posts/CreatePost.php` and `resources/views/livewire/posts/create-post.blade.php`.
 
 ### Single-File Component Example
 
 <!-- Single-File Component Example -->
+
 ```php
 <?php
 use Livewire\Component;
@@ -102,25 +103,25 @@ These things changed in Livewire 4, but may not have been updated in this applic
 - Islands (`@island`) for isolated updates; async actions (`wire:click.async`, `#[Async]`) for parallel execution.
 - Deferred/bundled loading: `defer`, `lazy.bundle` for optimized component loading.
 
-| Feature | Usage | Purpose |
-|---------|-------|---------|
-| Islands | `@island(name: 'stats')` | Isolated update regions |
-| Async | `wire:click.async` or `#[Async]` | Non-blocking actions |
-| Deferred | `defer` attribute | Load after page render |
-| Bundled | `lazy.bundle` | Load multiple together |
+| Feature  | Usage                            | Purpose                 |
+| -------- | -------------------------------- | ----------------------- |
+| Islands  | `@island(name: 'stats')`         | Isolated update regions |
+| Async    | `wire:click.async` or `#[Async]` | Non-blocking actions    |
+| Deferred | `defer` attribute                | Load after page render  |
+| Bundled  | `lazy.bundle`                    | Load multiple together  |
 
 ### New Directives
 
 - `wire:sort`, `wire:intersect`, `wire:ref`, `.renderless`, `.preserve-scroll` are available for use.
 - `data-loading` attribute automatically added to elements triggering network requests.
 
-| Directive | Purpose |
-|-----------|---------|
-| `wire:sort` | Drag-and-drop sorting |
-| `wire:intersect` | Viewport intersection detection |
-| `wire:ref` | Element references for JS |
-| `.renderless` | Component without rendering |
-| `.preserve-scroll` | Preserve scroll position |
+| Directive          | Purpose                         |
+| ------------------ | ------------------------------- |
+| `wire:sort`        | Drag-and-drop sorting           |
+| `wire:intersect`   | Viewport intersection detection |
+| `wire:ref`         | Element references for JS       |
+| `.renderless`      | Component without rendering     |
+| `.preserve-scroll` | Preserve scroll position        |
 
 ## Best Practices
 
@@ -143,6 +144,7 @@ For interceptors and hooks, see [reference/javascript-hooks.md](reference/javasc
 ## Testing
 
 <!-- Testing Example -->
+
 ```php
 Livewire::test(Counter::class)
     ->assertSet('count', 0)

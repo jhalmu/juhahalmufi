@@ -17,7 +17,7 @@ It is great to be back after the long break from PHP and Laravel and continue th
 - Inertia & React version: **[github.com/nunomaduro/laravel-starter-kit-inertia-react](https://github.com/nunomaduro/laravel-starter-kit-inertia-react)**
 
 ### Josh Cirrer Starter Kit
-- Fission: **[github.com/joshcirrer/fission](https://github.com/joshcirrer/fission)**
+- Fission: **[github.com/joshcirre/fission](https://github.com/joshcirrer/fission)**
 
 
 **Laravel Starter Kit** is an ultra-strict, type-safe [Laravel](https://laravel.com) skeleton engineered for developers who refuse to compromise on code quality. This opinionated starter kit enforces rigorous development standards through meticulous tooling configuration and architectural decisions that prioritize type safety, immutability, and fail-fast principles.
