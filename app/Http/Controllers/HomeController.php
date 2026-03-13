@@ -1,5 +1,5 @@
 <?php
-
+declare(strict_types=1);
 // app/Http/Controllers/HomeController.php
 
 namespace App\Http\Controllers;
@@ -7,7 +7,7 @@ namespace App\Http\Controllers;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 
-class HomeController extends Controller
+final class HomeController
 {
     public function __invoke(): Factory|View
     {

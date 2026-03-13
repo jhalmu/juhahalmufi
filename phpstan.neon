@@ -14,6 +14,6 @@ parameters:
         - routes
 
 
-    level: 150
+    level: max
 
     tmpDir: /tmp/phpstan
